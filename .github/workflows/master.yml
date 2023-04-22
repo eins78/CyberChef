@@ -51,6 +51,7 @@ jobs:
       if: success() && github.ref == 'refs/heads/master'
       uses: crazy-max/ghaction-github-pages@v3
       with:
+        keep_history: true
         target_branch: gh-pages
         build_dir: ./build/prod
       env:
